@@ -22,6 +22,8 @@ import { ContractComponent } from './contract/contract.component';
 
 
 import { DishService } from './services/dish.service';
+import { PromotionService } from './services/promotion.service';
+import { LeaderService } from './services/leader.service';
  
 
 
@@ -48,7 +50,9 @@ import { DishService } from './services/dish.service';
     MatButtonModule
   ],
   providers: [
-    DishService
+    DishService,
+    PromotionService,
+    LeaderService
   ],
   bootstrap: [AppComponent]
 })
